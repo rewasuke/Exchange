@@ -43,4 +43,6 @@ window.onload = () => {
   fetchRates();
 };
 
-
+document.body.addEventListener('touchmove', e => {
+  e.preventDefault();
+}, { passive: false });
