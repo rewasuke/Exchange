@@ -43,28 +43,4 @@ window.onload = () => {
   fetchRates();
 };
 
-// Cache DOM element references.
-		var numberish = document.querySelector(".numberish");
-		var input = numberish.querySelector(".numberish__input");
-		var temp = numberish.querySelector(".numberish__temp");
-
-		// Set the input mode for the main input.
-		input.inputMode = "decimal";
-		input.pattern = "[0-9.]*";
-
-		// When the main input is focused, make sure the correct keyboard appears.
-		input.addEventListener("focus", function() {
-			// Use a temporary input to trigger the keyboard change on iOS.
-			temp.inputMode = "decimal";
-			temp.pattern = "[0-9.]*";
-			
-			// Blur the main input, focus the temporary one, and then return focus.
-			input.blur();
-			temp.focus();
-			
-			window.requestAnimationFrame(() => {
-				input.focus();
-				input.setSelectionRange(input.value.length, input.value.length);
-			});
-		});
 
