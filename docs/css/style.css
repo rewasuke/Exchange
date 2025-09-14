@@ -1,0 +1,23 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+.poppins {
+  font-family: 'Poppins', sans-serif;
+}
+.icon-arrow-down {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: white;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
