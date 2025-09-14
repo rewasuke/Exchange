@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="user-scalable=no" />
     <title>Ханш Хөрвүүлэгч</title>
     <link rel="apple-touch-icon" sizes="180x180" href="./assest/apple-touch-icon.png">
    <link rel="icon" type="image/png" sizes="32x32" href="./assest/favicon-32x32.png">
@@ -17,7 +18,7 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body class="bg-[#FBE9E7] flex items-center justify-center min-h-screen p-4">
+  <body class="bg-[#FBE9E7] flex items-center justify-center min-h-full p-4">
     <div
       class="bg-white rounded-[40px] shadow-2xl p-8 w-full max-w-sm transform hover:scale-105 transition-transform duration-300"
     >
@@ -29,7 +30,7 @@
           <div
             class="poppins text-6xl font-extrabold text-[#D9555C] mb-2 flex justify-center items-center"
           >
-            <input id="amountUSD" class="text-center bg-transparent w-40 outline-none" value="0">
+            <input id="amountUSD" inputmode="numeric" class="text-center bg-transparent w-40 outline-none" value="0">
             <span class="text-4xl mr-1">$</span>
             
           </div>
@@ -50,7 +51,7 @@
 
       <div class="bg-[#FCEAE5] rounded-[30px] p-6 shadow-inner">
         <div class="text-center">
-          <label class="block text-gray-500 font-medium mb-1"
+          <label class="block text-xl font-bold text-[#D9555C]"
             >MNT</label
           >
           <div
@@ -59,7 +60,7 @@
             <span id="displayMNT">0.00</span>
             <span class="text-2xl">₮</span>
           </div>
-          <div class="text-xl font-bold text-[#D9555C]">Монгол төгрөг</div>
+          <div class="text-gray-500 font-medium mb-1">Монгол төгрөг</div>
         </div>
       </div>
     </div>
