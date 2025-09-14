@@ -1,5 +1,7 @@
 body {
   font-family: 'Inter', sans-serif;
+  overscroll-behavior-y: contain; /* Prevents pull-to-refresh and scroll chaining vertically */
+  overscroll-behavior-x: contain; /* Prevents scroll chaining horizontally */
 }
 .poppins {
   font-family: 'Poppins', sans-serif;
